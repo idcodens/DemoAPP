@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.770,=C:\Users\Dejan.Ilic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,C:\Json\projekat\Unit1.pas=C:\Users\Dejan.Ilic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,C:\Json\projekat\Unit1.fmx=C:\Users\Dejan.Ilic\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,C:\Json\projekat\Project1.dproj=C:\Users\Dejan.Ilic\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.768,=C:\Users\Dejan.Ilic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022.12.22 09:33:28.049,C:\Json\projekat\DEMO.dproj=C:\Json\projekat\Project1.dproj</Transaction>
+    <Transaction>2022.12.22 09:33:41.300,C:\Json\projekat\uDemo.pas=C:\Json\projekat\Unit1.pas</Transaction>
+    <Transaction>2022.12.22 09:33:41.300,C:\Json\projekat\uDemo.fmx=C:\Json\projekat\Unit1.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,359 @@
+object frmDemo: TfrmDemo
+  Left = 570
+  Top = 180
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'DEMO aplikacija - Luceed WEB servis'
+  ClientHeight = 405
+  ClientWidth = 892
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  Left = 570
+  Top = 180
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Top
+    Position.Y = 33.000000000000000000
+    Size.Width = 892.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 11
+    TabPosition = PlatformDefault
+    Sizes = (
+      892s
+      334s
+      892s
+      334s
+      892s
+      334s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 86.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Lista artikala'
+      ExplicitSize.cx = 86.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Panel1: TPanel
+        Position.X = 16.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 865.000000000000000000
+        Size.Height = 289.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object edtFilter: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 16.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 297.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object btnPretragaArtikli: TButton
+          Position.X = 328.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Pretraga artikala'
+          OnClick = btnPretragaArtikliClick
+        end
+        object gridArtikli: TGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 16.000000000000000000
+          Position.Y = 56.000000000000000000
+          Size.Width = 833.000000000000000000
+          Size.Height = 225.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          OnGetValue = gridArtikliGetValue
+          Viewport.Width = 813.000000000000000000
+          Viewport.Height = 200.000000000000000000
+          object StringColumn1: TStringColumn
+            Size.Width = 105.000000000000000000
+          end
+          object StringColumn2: TStringColumn
+            Size.Width = 703.000000000000000000
+          end
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 126.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Period obra'#269'una 3.3'
+      ExplicitSize.cx = 126.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Panel2: TPanel
+        Position.X = 8.000000000000000000
+        Position.Y = 22.000000000000000000
+        Size.Width = 873.000000000000000000
+        Size.Height = 297.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object btnPretragaObrTab2: TButton
+          Position.X = 304.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 112.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Pretraga obra'#269'una'
+          OnClick = btnPretragaObrTab2Click
+        end
+        object Label1: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 19.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Datum od:'
+          TabOrder = 2
+        end
+        object Label2: TLabel
+          Position.X = 171.000000000000000000
+          Position.Y = 18.000000000000000000
+          Size.Width = 25.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'do'
+          TabOrder = 1
+        end
+        object DatumOdTab2: TDateEdit
+          Date = 41275.000000000000000000
+          Position.X = 80.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+        end
+        object DatumDoTab2: TDateEdit
+          Date = 41640.000000000000000000
+          Position.X = 200.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+        end
+        object gridObracunTab2: TGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 12.000000000000000000
+          Position.Y = 43.000000000000000000
+          Size.Width = 850.000000000000000000
+          Size.Height = 249.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          OnGetValue = gridObracunTab2GetValue
+          Viewport.Width = 830.000000000000000000
+          Viewport.Height = 224.000000000000000000
+          object StringColumn3: TStringColumn
+            Size.Width = 105.000000000000000000
+          end
+          object StringColumn4: TStringColumn
+            Size.Width = 295.000000000000000000
+          end
+          object StringColumn5: TStringColumn
+            Size.Width = 103.000000000000000000
+          end
+          object StringColumn6: TStringColumn
+            Size.Width = 143.000000000000000000
+          end
+          object StringColumn7: TStringColumn
+            Size.Width = 167.000000000000000000
+          end
+        end
+        object banPJTab2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 10
+          Text = '4986-1'
+          Position.X = 760.000000000000000000
+          Position.Y = 16.000000000000000000
+        end
+        object Label3: TLabel
+          Position.X = 662.000000000000000000
+          Position.Y = 19.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Poslovna jedinica:'
+          TabOrder = 11
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 126.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Period obra'#269'una 3.4'
+      ExplicitSize.cx = 126.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Panel4: TPanel
+        Position.X = 8.000000000000000000
+        Position.Y = 22.000000000000000000
+        Size.Width = 873.000000000000000000
+        Size.Height = 297.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object btnPretragaObrTab3: TButton
+          Position.X = 304.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 112.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Pretraga obra'#269'una'
+          OnClick = btnPretragaObrTab3Click
+        end
+        object Label4: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 19.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Datum od:'
+          TabOrder = 2
+        end
+        object Label5: TLabel
+          Position.X = 171.000000000000000000
+          Position.Y = 18.000000000000000000
+          Size.Width = 25.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'do'
+          TabOrder = 1
+        end
+        object DatumOdTab3: TDateEdit
+          Date = 41275.000000000000000000
+          Position.X = 80.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+        end
+        object DatumDoTab3: TDateEdit
+          Date = 41640.000000000000000000
+          Position.X = 200.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+        end
+        object banPJTab3: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 9
+          Text = '4986-1'
+          Position.X = 760.000000000000000000
+          Position.Y = 16.000000000000000000
+        end
+        object Label6: TLabel
+          Position.X = 662.000000000000000000
+          Position.Y = 19.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Poslovna jedinica:'
+          TabOrder = 10
+        end
+        object GridObracunTab3: TGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 12.000000000000000000
+          Position.Y = 43.000000000000000000
+          Size.Width = 850.000000000000000000
+          Size.Height = 249.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          OnGetValue = GridObracunTab3GetValue
+          Viewport.Width = 830.000000000000000000
+          Viewport.Height = 224.000000000000000000
+          object StringColumn8: TStringColumn
+            Size.Width = 105.000000000000000000
+          end
+          object StringColumn9: TStringColumn
+            Size.Width = 295.000000000000000000
+          end
+          object StringColumn10: TStringColumn
+            Size.Width = 103.000000000000000000
+          end
+          object StringColumn11: TStringColumn
+            Size.Width = 143.000000000000000000
+          end
+          object StringColumn12: TStringColumn
+            Size.Width = 167.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object Panel3: TPanel
+    Align = Top
+    Size.Width = 892.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    object btnClose: TButton
+      Position.X = 802.000000000000000000
+      Position.Y = 4.000000000000000000
+      TabOrder = 6
+      Text = 'Izlaz'
+      OnClick = btnCloseClick
+    end
+  end
+  object RESTClient1: TRESTClient
+    Authenticator = HTTPBasicAuthenticator1
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://apidemo.luceed.hr/datasnap/rest/artikli/naziv'
+    Params = <>
+    Left = 168
+    Top = 408
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    Left = 360
+    Top = 408
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    Left = 264
+    Top = 408
+  end
+  object HTTPBasicAuthenticator1: THTTPBasicAuthenticator
+    Username = 'luceed_mb'
+    Password = '7e5y2Uza'
+    Left = 48
+    Top = 408
+  end
+end
